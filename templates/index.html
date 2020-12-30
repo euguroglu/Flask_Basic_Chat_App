@@ -8,7 +8,7 @@
 <script type="text/javascript">
 $(document).ready(function() {
 
-	var socket = io.connect('https://chat-app-enes.herokuapp.com:28658');
+	var socket = io.connect('https://chat-app-enes.herokuapp.com:PORT');
 
 	socket.on('connect', function() {
 		socket.send('User has connected!');
